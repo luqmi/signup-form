@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="body_container">
+    <script>
+
+        var sk = document.getElementById("body_container");
+            sk.style.margin = "0px";
+            sk.style.padding = "0px";
+            // sk.style.backgroundImage = "sch.jfif"
+            sk.setAttribute("url","sch.jfif");
+    //   <================= for div ===============>
+      var d = document.createElement("div");
+      d.setAttribute("id", "container");
+      d.style.height = "80vh";
+      d.style.width = "30vw";
+      d.style.margin = "auto";
+      d.style.backgroundColor = "#222222";
+      d.style.color = "white";
+      d.style.marginTop = "5%"
+      d.style.borderRadius = "7px"
+      d.style.boxShadow = "10px 10px 50px black"
+      d.style.textAlign = "center";
+      d.style.display = "flex";
+      d.style.flexDirection = "column"
+      d.style.alignItems = "center"
+      d.style.justifycontent = "center"
+      document.body.append(d);
+
+    //   <================= for heading ===============>
+    var h = document.createElement("h4");
+    h.setAttribute("id","header");
+    h.innerHTML = "Student Information";
+    h.style.textDecoration = "underline 5px "  
+    h.style.color = "white"
+    h.style.fontSize = "25px"
+    h.style.letterSpacing = "5px"
+    d.append(h)
+
+    //   <================= for child div2 ===============>
+    var d2 = document.createElement("div");
+        d2.setAttribute("id","child");
+        d2.style.height = "70%";
+        d2.style.width = "80%";
+        d.append(d2);
+
+
+
+      //     //<================= for input ===============>
+          var ip = document.createElement("input");
+          ip.setAttribute("type","text");
+          ip.setAttribute("placeholder","Enter your Name")
+          ip.style.marginTop = "10px"
+          ip.style.padding = "5px 80px"
+          ip.style.letterSpacing = "2px"
+          ip.style.borderRadius = "15px"
+          ip.style.border = "none"
+          d2.append(ip);
+          d.append(d2);
+
+    
+
+      //     //<================= for input ===============>
+          var ip_2 = document.createElement("input");
+          ip_2.setAttribute("type","text")
+          ip_2.setAttribute("placeholder","Enter your last name")
+          ip_2.style.marginTop = "15px"
+          ip_2.style.padding = "5px 80px"
+          ip_2.style.letterSpacing = "2px"
+          ip_2.style.borderRadius = "15px"
+          ip_2.style.border = "none"
+          d2.append(ip_2);
+          d.append(d2);
+     
+      //     //<================= for input ===============>
+          var ip_3 = document.createElement("input");
+          ip_3.setAttribute("type","text")
+          ip_3.setAttribute("placeholder","Enter your email")
+          ip_3.style.marginTop = "15px"
+          ip_3.style.padding = "5px 80px"
+          ip_3.style.letterSpacing = "2px"
+          ip_3.style.borderRadius = "15px"
+          ip_3.style.border = "none"
+          d2.append(ip_3);
+          d.append(d2);
+    
+      //     //<================= for input ===============>
+          var ip_4 = document.createElement("input");
+          ip_4.setAttribute("type","text")
+          ip_4.setAttribute("placeholder","Enter your Address")
+          ip_4.style.marginTop = "15px"
+          ip_4.style.padding = "5px 80px"
+          ip_4.style.letterSpacing = "2px"
+          ip_4.style.borderRadius = "15px"
+          ip_4.style.border = "none"
+          d2.append(ip_4);
+         d.append(d2);
+  
+ 
+      //     //<================= for input ===============>
+          var ip_5 = document.createElement("input");
+          ip_5.setAttribute("type","text")
+          ip_5.setAttribute("placeholder","Enter your number")
+          ip_5.style.marginTop = "15px"
+          ip_5.style.padding = "5px 80px"
+          ip_5.style.letterSpacing = "2px"
+          ip_5.style.borderRadius = "15px"
+          ip_5.style.border = "none"
+          d2.append(ip_5);
+          d.append(d2);
+    
+            // <================= for input ===============>
+          var ip_6 = document.createElement("input");
+          ip_6.setAttribute("type","text")
+          ip_6.setAttribute("placeholder","Enter your City")
+          ip_6.style.marginTop = "15px"
+          ip_6.style.padding = "5px 80px"
+          ip_6.style.letterSpacing = "2px"
+          ip_6.style.borderRadius = "15px"
+          ip_6.style.border = "none"
+          d2.append(ip_6);
+          d.append(d2);
+
+            // <================= for button ===============>
+
+          var btn = document.createElement("button");
+          btn.innerHTML = "Submit";
+          btn.style.fontSize = "18px"
+          btn.style.fontWeight = "bold"
+          btn.style.color = "white"
+          btn.style.marginTop = "15px"
+          btn.style.padding = "4px 130px"
+          btn.style.letterSpacing = "2px"
+          btn.style.borderRadius = "15px"
+          btn.style.border = "none"
+          btn.style.backgroundColor = "gray"
+          btn.style.cursor = "pointer"
+          d2.append(btn);
+          d.append(d2);
+
+
+
+        //     //<================= for child to child div ===============>
+        var d3 = document.createElement("div");
+        d3.style.width = "100%"
+        d3.style.height = "auto"
+        d3.style.marginTop = "20px"
+        d3.setAttribute("id","child_of_chid")
+        d3.style.display = "flex";
+        d3.style.justifyContent = "center"
+        d3.style.justifyContent = "space-evenly"
+        d3.style.alignItems = "center"
+        // d3.style.backgroundColor = "#FFCAC8"
+        d2.append(d3);
+
+        //<================= for anchor tag_1 ===============>
+        var a = document.createElement("a")
+        a.setAttribute("href","https://www.instagram.com")
+        d3.append(a);
+
+        //<================= for image ===============>
+        var image = document.createElement("img");
+        image.setAttribute("src","insta.jfif")
+        image.style.borderRadius = "25px"
+        image.style.width = "40px"
+        image.style.height = "40px"
+        a.append(image)
+
+        //<================= for anchor tag_2 ===============>
+          var b = document.createElement("a")
+        b.setAttribute("href","https://www.git.com")
+        d3.append(b);
+
+        // //     //<================= for image ===============>
+        var image_1 = document.createElement("img");
+        image_1.setAttribute("src","git.png")
+        image_1.style.borderRadius = "25px"
+        image_1.style.width = "40px"
+        image_1.style.height = "40px"
+        b.append(image_1)
+        
+
+        //<================= for anchor tag_3 ===============>
+        var c = document.createElement("a")
+        c.setAttribute("href","https://www.youtube.com")
+        d3.append(c);
+
+
+         //<================= for image ===============>
+         var image_2 = document.createElement("img");
+         image_2.setAttribute("src","youtube.png")
+         image_2.style.borderRadius = "25px"
+         image_2.style.width = "40px"
+         image_2.style.height = "40px"
+        c.append(image_2)
+       
+    </script>
+  </body>
+</html>
